@@ -38,8 +38,7 @@ var config_data = `
         "g": "Ground<br>",
         "s": "Station<br>",
         "p": "Push<br>"
-      },
-      "defaultValue": "g"
+      }
     },
     { "name": "What can they score (AUTO)?",
       "code": "sca",
@@ -51,8 +50,7 @@ var config_data = `
         "ug": "Cube Ground<br>",
         "um": "Cube Middle<br>",
         "uh": "Cube High<br>"
-      },
-      "defaultValue": "cg"
+      }
     },
     { "name": "What can they score (TELEOP)?",
       "code": "sct",
@@ -64,8 +62,7 @@ var config_data = `
         "ug": "Cube Ground<br>",
         "um": "Cube Middle<br>",
         "uh": "Cube High<br>"
-      },
-      "defaultValue": "cg"
+      }
     },
     { "name": "Special Mechanism for End Game?",
       "code": "end",
