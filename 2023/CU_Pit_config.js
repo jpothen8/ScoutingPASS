@@ -8,11 +8,6 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
-    { "name": "Width",
-      "code": "wid",
-      "type": "number",
-      "defaultValue": "0"
-    },
     { "name": "Weight",
       "code": "wei",
       "type": "number",
@@ -30,38 +25,11 @@ var config_data = `
       },
       "defaultValue": "o"
     },
-    { "name": "Other Drivetrain",
+    { "name": "Other Drivetrain (if selected)",
       "code": "odt",
       "type": "text",
       "size": 20,
       "maxSize": 50
-    },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1<br>",
-        "2": "L2<br>",
-        "3": "L3<br>",
-        "4": "L4<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
-    { "name": "Drivetrain Motor",
-      "code": "mot",
-      "type": "radio",
-      "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "c": "CIM<br>",
-        "x": "Other<br>"
-      },
-      "defaultValue":"x"
-    },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
     },
     { "name": "Floor pickup Cones",
       "code": "fco",
@@ -75,8 +43,31 @@ var config_data = `
       "code": "ccs",
       "type": "bool"
     },
-    { "name": "Autos",
-      "code": "aut",
+    { "name": "Intake Mechanism (don't select push unless they can only push",
+      "code": "int",
+      "type": "radio"
+      "choices": {
+        "g": "Ground<br>",
+        "s": "Station<br>",
+        "p": "Push<br>"
+    },
+    { "name": "Special Mechanism for End Game?",
+      "code": "end",
+      "type": "text",
+      "size": 20,
+      "maxSize": 200
+    },
+    { "name": "How much driver practice do you have?",
+      "code": "int",
+      "type": "radio",
+      "choices": {
+        "n": "None<br>",
+        "c": "Touched the Controlle<br>",
+        "h": "Hour<br>",
+        "l": "A lot<br>"
+    },
+    { "name": "Notes?",
+      "code": "not",
       "type": "text",
       "size": 20,
       "maxSize": 250
