@@ -50,6 +50,7 @@ var config_data = `
         "g": "Ground<br>",
         "s": "Station<br>",
         "p": "Push<br>"
+      }
     },
     { "name": "Special Mechanism for End Game?",
       "code": "end",
