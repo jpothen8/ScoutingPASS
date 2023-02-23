@@ -8,6 +8,11 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
+    { "name": "Width",
+      "code": "wid",
+      "type": "number",
+      "defaultValue": "0"
+    },
     { "name": "Weight",
       "code": "wei",
       "type": "number",
@@ -20,7 +25,7 @@ var config_data = `
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
         "b": "Butterfly/Grashopper<br>",
-        "m": "Mecanum<br>",
+        "m": "Mechanum<br>",
         "o": "Other"
       },
       "defaultValue": "o"
@@ -31,60 +36,49 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Intake Capabilities",
-      "code": "int",
-      "type": "bool",
-      "choices": {
-        "g": "Ground<br>",
-        "s": "Station<br>",
-        "p": "Push<br>"
-      }
-    },
-    { "name": "What can they score (AUTO)?",
-      "code": "sca",
-      "type": "bool",
-      "choices": {
-        "cg": "Cone Ground<br>",
-        "cm": "Cone Middle<br>",
-        "ch": "Cone High<br>",
-        "ug": "Cube Ground<br>",
-        "um": "Cube Middle<br>",
-        "uh": "Cube High<br>"
-      }
-    },
-    { "name": "What can they score (TELEOP)?",
-      "code": "sct",
-      "type": "bool",
-      "choices": {
-        "cg": "Cone Ground<br>",
-        "cm": "Cone Middle<br>",
-        "ch": "Cone High<br>",
-        "ug": "Cube Ground<br>",
-        "um": "Cube Middle<br>",
-        "uh": "Cube High<br>"
-      }
-    },
-    { "name": "Special Mechanism for End Game?",
-      "code": "end",
-      "type": "text",
-      "size": 20,
-      "maxSize": 200
-    },
-    { "name": "How much driver practice do you have?",
-      "code": "int",
+    { "name": "Swerve Ratio",
+      "code": "sr",
       "type": "radio",
       "choices": {
-        "n": "None<br>",
-        "c": "Touched the Controller<br>",
-        "h": "Hour<br>",
-        "l": "A lot<br>"
+        "1": "L1<br>",
+        "2": "L2<br>",
+        "3": "L3<br>",
+        "4": "L4<br>",
+        "x": "Not Swerve"
       },
-      "defaultValue": "n"
+      "defaultValue":"x"
     },
-    { "name": "Notes?",
-      "code": "not",
+    { "name": "Drivetrain Motor",
+      "code": "mot",
+      "type": "radio",
+      "choices": {
+        "n": "Neo<br>",
+        "f": "Falcon<br>",
+        "c": "CIM<br>",
+        "x": "Other<br>"
+      },
+      "defaultValue":"x"
+    },
+    { "name": "# of Batteries",
+      "code": "nob",
+      "type": "number"
+    },
+    { "name": "Floor pickup Cones",
+      "code": "fco",
+      "type": "bool"
+    },
+    { "name": "Floor pickup Cubes",
+      "code": "fcu",
+      "type": "bool"
+    },
+    { "name": "Cross Charging Station",
+      "code": "ccs",
+      "type": "bool"
+    },
+    { "name": "Autos",
+      "code": "aut",
       "type": "text",
-      "size": 25,
+      "size": 20,
       "maxSize": 250
     }
   ],
