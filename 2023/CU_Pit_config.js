@@ -20,20 +20,20 @@ var config_data = `
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
         "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
+        "m": "Mecanum<br>",
         "o": "Other"
       },
       "defaultValue": "o"
     },
-    { "name": "Other Drivetrain (if selected)",
+    { "name": "Other Drivetrain",
       "code": "odt",
       "type": "text",
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Intake Mechanism (don't select push unless they can only push",
+    { "name": "Intake Capabilities",
       "code": "int",
-      "type": "radio",
+      "type": "bool",
       "choices": {
         "g": "Ground<br>",
         "s": "Station<br>",
@@ -43,7 +43,7 @@ var config_data = `
     },
     { "name": "What can they score (AUTO)?",
       "code": "sca",
-      "type": "radio",
+      "type": "bool",
       "choices": {
         "cg": "Cone Ground<br>",
         "cm": "Cone Middle<br>",
@@ -56,7 +56,7 @@ var config_data = `
     },
     { "name": "What can they score (TELEOP)?",
       "code": "sct",
-      "type": "radio",
+      "type": "bool",
       "choices": {
         "cg": "Cone Ground<br>",
         "cm": "Cone Middle<br>",
@@ -66,10 +66,6 @@ var config_data = `
         "uh": "Cube High<br>"
       },
       "defaultValue": "cg"
-    },
-    { "name": "Cross Charging Station",
-      "code": "ccs",
-      "type": "bool"
     },
     { "name": "Special Mechanism for End Game?",
       "code": "end",
