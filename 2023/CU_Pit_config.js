@@ -45,7 +45,7 @@ var config_data = `
     },
     { "name": "Intake Mechanism (don't select push unless they can only push",
       "code": "int",
-      "type": "radio"
+      "type": "radio",
       "choices": {
         "g": "Ground<br>",
         "s": "Station<br>",
