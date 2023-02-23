@@ -31,18 +31,6 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Floor pickup Cones",
-      "code": "fco",
-      "type": "bool"
-    },
-    { "name": "Floor pickup Cubes",
-      "code": "fcu",
-      "type": "bool"
-    },
-    { "name": "Cross Charging Station",
-      "code": "ccs",
-      "type": "bool"
-    },
     { "name": "Intake Mechanism (don't select push unless they can only push",
       "code": "int",
       "type": "radio",
@@ -50,7 +38,38 @@ var config_data = `
         "g": "Ground<br>",
         "s": "Station<br>",
         "p": "Push<br>"
-      }
+      },
+      "defaultValue": "g"
+    },
+    { "name": "What can they score (AUTO)?",
+      "code": "sca",
+      "type": "radio",
+      "choices": {
+        "cg": "Cone Ground<br>",
+        "cm": "Cone Middle<br>",
+        "ch": "Cone High<br>",
+        "ug": "Cube Ground<br>",
+        "um": "Cube Middle<br>",
+        "uh": "Cube High<br>"
+      },
+      "defaultValue": "cg"
+    },
+    { "name": "What can they score (TELEOP)?",
+      "code": "sct",
+      "type": "radio",
+      "choices": {
+        "cg": "Cone Ground<br>",
+        "cm": "Cone Middle<br>",
+        "ch": "Cone High<br>",
+        "ug": "Cube Ground<br>",
+        "um": "Cube Middle<br>",
+        "uh": "Cube High<br>"
+      },
+      "defaultValue": "cg"
+    },
+    { "name": "Cross Charging Station",
+      "code": "ccs",
+      "type": "bool"
     },
     { "name": "Special Mechanism for End Game?",
       "code": "end",
@@ -63,10 +82,11 @@ var config_data = `
       "type": "radio",
       "choices": {
         "n": "None<br>",
-        "c": "Touched the Controlle<br>",
+        "c": "Touched the Controller<br>",
         "h": "Hour<br>",
         "l": "A lot<br>"
-      }
+      },
+      "defaultValue": "n"
     },
     { "name": "Notes?",
       "code": "not",
