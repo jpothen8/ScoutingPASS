@@ -66,6 +66,7 @@ var config_data = `
         "c": "Touched the Controlle<br>",
         "h": "Hour<br>",
         "l": "A lot<br>"
+      }
     },
     { "name": "Notes?",
       "code": "not",
