@@ -87,7 +87,7 @@ var config_data = `
     { "name": "Notes?",
       "code": "not",
       "type": "text",
-      "size": 20,
+      "size": 25,
       "maxSize": 250
     }
   ],
