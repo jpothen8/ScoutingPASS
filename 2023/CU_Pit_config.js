@@ -13,6 +13,14 @@ var config_data = `
       "type": "number",
       "defaultValue": "0"
     },
+    { "name": "Station Pickup",
+      "code": "sin",
+      "type": "bool"
+    },
+    { "name": "Ground Pickup (non-pushing)",
+      "code": "gin",
+      "type": "bool"
+    },
     { "name": "Drivetrain",
       "code": "drv",
       "type": "radio",
@@ -33,14 +41,6 @@ var config_data = `
     },
     { "name": "Pushes Cubes/Cones",
       "code": "pin",
-      "type": "bool"
-    },
-    { "name": "Station Pickup",
-      "code": "sin",
-      "type": "bool"
-    },
-    { "name": "Ground Pickup (non-pushing)",
-      "code": "gin",
       "type": "bool"
     },
     { "name": "Auto Cone Ground",
