@@ -31,41 +31,65 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Intake Capabilities",
-      "code": "int",
-      "type": "radio",
-      "choices": {
-        "g": "Ground<br>",
-        "s": "Station<br>",
-        "p": "Push<br>"
-      },
-      "defaultValue": "g"
+    { "name": "Pushes Cubes/Cones",
+      "code": "pin",
+      "type": "bool"
     },
-    { "name": "What can they score (AUTO)?",
-      "code": "sca",
-      "type": "bool",
-      "choices": {
-        "cg": "Cone Ground<br>",
-        "cm": "Cone Middle<br>",
-        "ch": "Cone High<br>",
-        "ug": "Cube Ground<br>",
-        "um": "Cube Middle<br>",
-        "uh": "Cube High<br>"
-      },
-      "defaultValue": "cg"
+    { "name": "Station Pickup",
+      "code": "sin",
+      "type": "bool"
     },
-    { "name": "What can they score (TELEOP)?",
-      "code": "sct",
-      "type": "bool",
-      "choices": {
-        "cg": "Cone Ground<br>",
-        "cm": "Cone Middle<br>",
-        "ch": "Cone High<br>",
-        "ug": "Cube Ground<br>",
-        "um": "Cube Middle<br>",
-        "uh": "Cube High<br>"
-      },
-      "defaultValue": "cg"
+    { "name": "Ground Pickup (non-pushing)",
+      "code": "gin",
+      "type": "bool"
+    },
+    { "name": "Auto Cone Ground",
+      "code": "acg",
+      "type": "bool"
+    },
+    { "name": "Auto Cone Medium",
+      "code": "acm",
+      "type": "bool"
+    },
+    { "name": "Auto Cone High",
+      "code": "ach",
+      "type": "bool"
+    },
+    { "name": "Auto Cube Ground",
+      "code": "aug",
+      "type": "bool"
+    },
+    { "name": "Auto Cube Medium",
+      "code": "aum",
+      "type": "bool"
+    },
+    { "name": "Auto Cube High",
+      "code": "ach",
+      "type": "bool"
+    },
+    { "name": "Teleop Cone Ground",
+      "code": "tcg",
+      "type": "bool"
+    },
+    { "name": "Teleop Cone Medium",
+      "code": "tcm",
+      "type": "bool"
+    },
+    { "name": "Teleop Cone High",
+      "code": "tch",
+      "type": "bool"
+    },
+    { "name": "Teleop Cube Ground",
+      "code": "tug",
+      "type": "bool"
+    },
+    { "name": "Teleop Cube Medium",
+      "code": "tum",
+      "type": "bool"
+    },
+    { "name": "Teleop Cube High",
+      "code": "tch",
+      "type": "bool"
     },
     { "name": "Special Mechanism for End Game?",
       "code": "end",
